@@ -1,0 +1,21 @@
+{
+    "users": [
+        {
+            "userToken": "YOUR_FIRST_BOT_TOKEN_1",
+            "name": "Bot1"
+        },
+        {
+            "userToken": "YOUR_SECOND_BOT_TOKEN_2",
+            "name": "Bot2"
+        },
+        {
+            "userToken": "YOUR_THIRD_BOT_TOKEN_3",
+            "name": "Bot3"
+        }
+    ],
+    "openaiApiKey": "YOUR_GROK_API_KEY",
+    "guildId": "YOUR_GUILD_ID",
+    "channelId": "YOUR_CHANNEL_ID",
+    "delayMs": 60000
+}
+

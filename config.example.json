@@ -1,5 +1,18 @@
 {
-    "userToken": "YOUR_DISCORD_USER_TOKEN",
+    "userToken": [
+        {
+            "userToken": "token_1",
+            "name": "discord_user_1"
+        },
+        {
+            "userToken": "token_2",
+            "name": "discord_user_2"
+        },
+        {
+            "userToken": "token_3",
+            "name": "discord_user_3"
+        }
+    ],
     "openaiApiKey": "YOUR_OPENAI_API_KEY",
     "guildId": "DISCORD_GUILD_ID",
     "channelId": "DISCORD_CHANNEL_ID",
