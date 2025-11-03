@@ -13,7 +13,7 @@
             "name": "Bot3"
         }
     ],
-    "openaiApiKey": "YOUR_GROK_API_KEY",
+    "grokApiKey": "YOUR_GROK_API_KEY",
     "guildId": "YOUR_GUILD_ID",
     "channelId": "YOUR_CHANNEL_ID",
     "delayMs": 60000

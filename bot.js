@@ -8,7 +8,7 @@ const config = JSON.parse(fs.readFileSync('./config.json', 'utf-8'));
 // Model configuration
 const GROK_MODEL = 'grok-4-fast-non-reasoning';
 const GROK_API_URL = 'https://api.x.ai/v1/chat/completions';
-const GROK_API_KEY = config.grokApiKey || config.openaiApiKey;
+const GROK_API_KEY = config.grokApiKey;
 
 // System prompts
 const SYSTEM_PROMPT_CHAT = "you are a friendly, natural chatbot. reply only in english, keep it short just a few words, don't capitalize the first letter. reply like you're chatting with a friend. NEVER repeat or reuse messages that were already sent recently.";

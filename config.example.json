@@ -13,7 +13,7 @@
             "name": "discord_user_3"
         }
     ],
-    "openaiApiKey": "YOUR_OPENAI_API_KEY",
+    "grokApiKey": "YOUR_GROK_API_KEY",
     "guildId": "DISCORD_GUILD_ID",
     "channelId": "DISCORD_CHANNEL_ID",
     "delayMs": 5000

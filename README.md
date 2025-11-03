@@ -120,7 +120,7 @@ Tạo file `config.json` trong thư mục gốc với cấu trúc sau:
       "name": "Bot1"
     }
   ],
-  "openaiApiKey": "YOUR_GROK_OR_OPENAI_API_KEY",
+  "openaiApiKey": "YOUR_GROK_API_KEY",
   "guildId": "YOUR_GUILD_ID",
   "channelId": "YOUR_CHANNEL_ID",
   "delayMs": 60000
@@ -145,7 +145,7 @@ Tạo file `config.json` trong thư mục gốc với cấu trúc sau:
       "name": "Bot3"
     }
   ],
-  "openaiApiKey": "YOUR_GROK_OR_OPENAI_API_KEY",
+  "openaiApiKey": "YOUR_GROK_API_KEY",
   "guildId": "YOUR_GUILD_ID",
   "channelId": "YOUR_CHANNEL_ID",
   "delayMs": 60000
@@ -246,7 +246,9 @@ Hoặc từ URL:
 
 #### Cấu hình API Key trong config.json
 
-Sau khi có API key, thêm nó vào file `config.json`:
+Sau khi có API key từ console.x.ai, thêm nó vào file `config.json`:
+
+**Cách 1: Sử dụng `openaiApiKey` (đơn giản nhất)**
 
 ```json
 {
@@ -258,7 +260,7 @@ Sau khi có API key, thêm nó vào file `config.json`:
 }
 ```
 
-hoặc nếu bạn muốn sử dụng key riêng cho Grok:
+**Cách 2: Sử dụng `grokApiKey` (ưu tiên)**
 
 ```json
 {
@@ -271,7 +273,11 @@ hoặc nếu bạn muốn sử dụng key riêng cho Grok:
 }
 ```
 
-**Lưu ý:** Bot sẽ ưu tiên sử dụng `grokApiKey` nếu có, nếu không sẽ dùng `openaiApiKey`. Cả hai đều phải là Grok API key từ console.x.ai.
+**Lưu ý về cấu hình API key:**
+- Bot sẽ ưu tiên sử dụng `grokApiKey` nếu có, nếu không sẽ dùng `openaiApiKey`
+- **Cả hai đều phải là Grok API key từ console.x.ai** (không phải OpenAI API key)
+- Tên biến `openaiApiKey` được giữ lại để tương thích với code cũ, nhưng thực tế chỉ dùng Grok API
+- Format API key từ X.AI: `xai-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
 
 ### Bot Tiêu chuẩn (bot.js)
 
